@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="cinepica.css">
+	<link href="https://fonts.googleapis.com/css?family=Karla|Literata&display=swap" rel="stylesheet">
+
+	<title>Cinépica --- ¿Qué puedo ver hoy?</title>
+</head>
+<body id="bootstrap-overrides">
+
+<div id="logo-div">
+  <img id="logo" src="IMG/logo.png" alt="cinepica">
+</div>
+
+<!-- 
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div id="active-image-carousel" class="card mb-2 carousel-item active">
+      <img class="card-img-top card-roulette" src="IMG/pan-poster.jpg" alt="Card image" >
+      <br>
+                <div class="genres">
+            <div class="badge badge-pill badge-comedia">Comedia</div>
+            <div class="badge badge-pill badge-drama">Drama</div>
+            <div class="badge badge-pill badge-suspenso">Suspenso</div>
+            <div class="badge badge-pill badge-psicologica">Psicológica</div>
+            <div class="badge badge-pill badge-terror">Terror</div>
+            <div class="badge badge-pill badge-biografica">Biográfica</div>
+            <div class="badge badge-pill badge-documental">Documental</div>
+            <div class="badge badge-pill badge-policial">Policial</div>
+            <div class="badge badge-pill badge-musical">Musical</div>
+            <div class="badge badge-pill badge-romantica">Romantica</div>
+            <div class="badge badge-pill badge-accion">Acción</div>
+          </div>
+        <div class="card-img-overlay" >
+        <h4 class="card-title">El Laberinto del Fauno</h4>
+        <p class="card-text">Durante la Guerra Civil española, Ofelia llega para vivir bajo la tutela del capitán Vidal, quien es su padrastro y un riguroso oficial de la armada. Solitaria y con su madre enferma, la niña se interna poco a poco en un mundo extraño y fantástico donde eventualmente conoce al Fauno.
+
+        El Laberinto del Fauno es un historia agridulce, donde mitología y aventura funcionan como purga de algo tan real y crudo como las armas, las bombas y las navajas que se ciernen en las guerras al otro lado de la puerta. Una película que fusiona la fantasía en la mente de una niña con la cruel realidad de la época.</p>
+        <a href="#" class="btn btn-success">See Profile</a>
+      </div>
+    </div>
+    <div class="card mb-2 carousel-item">
+      <img class="card-img-top card-roulette" src="IMG/wailing-poster.jpg" alt="Card image" >
+      <div class="card-img-overlay" >
+        <h4 class="card-title">The Wailing</h4>
+        <p class="card-text">Sangrientos asesinatos, una extraña enfermedad, rumores acerca de un solitario japonés que vive en las montañas. En el pueblo de Goksung el policía Jong-Goo se verá implicado en una trama que pondrá a prueba no sólo sus capacidades como detective, sino también sus creencias.
+
+            The Wailing es thriller, es psicología, es suspenso, es ocultismo. Una muestra más del enorme crecimiento que ha logrado el cine coreano, especialmente en géneros como éste.</p>
+        <a href="#" class="btn btn-success">See Profile</a>
+      </div>
+    </div>
+    <div class="card mb-2 carousel-item">
+      <img class="card-img-top card-roulette" src="IMG/billboard-poster.jpg" alt="Card image" >
+      <div class="card-img-overlay" >
+        <h4 class="card-title">Three Billboards Outside Ebbing, Missouri</h4>
+        <p class="card-text">Meses han pasado desde que la hija de Mildred (Frances McDormand) fue violada y asesinada. Para llamar la atención, ella decide pintar tres carteles en la entrada del pueblo acusando de desidia a las autoridades locales.
+
+            Three Billboards es un film con una historia fuerte y actuaciones poderosas por parte de McDormand, Woody Harrelson y Sam Rockwell, en el que el director juega con la opinión del espectador en relación a los personajes. Un drama con toques de comedia negra que les valió a la actriz principal y a Rockwell un Óscar a cada uno por sus actuaciones.</p>
+        <a href="#" class="btn btn-success">See Profile</a>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next " href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+-->
+
+<div id="billboards" class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="posts/threebill.jpg" class="card-img" alt="three billboards image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="title-info">
+          <h7>USA • 2017 • 1h 55min</h7>
+          <h5 class="card-title">Three Billboards Outside Ebbing, Missouri</h5>
+          <h7>("Tres anuncios por un crimen")</h7>
+          <div class="genres">
+            <div class="badge badge-pill badge-drama">Drama</div>
+            <div class="badge badge-pill badge-suspenso">Suspenso</div>
+            <div class="badge badge-pill badge-policial">Policial</div>
+            <div class="badge badge-pill badge-comedia">Comedia</div>
+        </div>
+
+        <div class="staff-info">
+          <h7>
+            Director: Martin McDonagh.
+            <br>
+            Reparto: Frances McDormand, Woody Harrelson, Sam Rockwell.
+          </h7>
+        </div>
+
+        <p class="card-text">Meses han pasado desde que la hija de Mildred (Frances McDormand) fue violada y asesinada. Para llamar la atención, ella decide pintar tres carteles en la entrada del pueblo acusando de desidia a las autoridades locales.
+
+          Three Billboards es un film con una historia fuerte y actuaciones poderosas por parte de McDormand, Woody Harrelson y Sam Rockwell, en el que el director juega con la opinión del espectador en relación a los personajes. Un drama con toques de comedia negra que les valió a la actriz principal y a Rockwell un Óscar a cada uno por sus actuaciones.</p>
+          <span class="imdbRatingPlugin" data-user="ur9121736" data-title="tt5027774" data-style="p2" style="margin-top: -0px;"><a href="https://www.imdb.com/title/tt5027774/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_37x18.png" alt=" Three Billboards Outside Ebbing, Missouri
+            (2017) on IMDb" />
+            </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="4-meses" class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="posts/4-meses.jpg" class="card-img" alt="4 meses, 3 semanas, 2 dias">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="title-info">
+          <h7>Rumania • 2007 • 1h 53min</h7>
+          <h5 class="card-title">4 meses, 3 semanas, 2 días</h5>
+          <h7>("4 luni, 3 saptamâni si 2 zile")</h7>
+          <div class="genres">
+            <div class="badge badge-pill badge-drama">Drama</div>
+          </div>
+        </div>
+
+        <div class="staff-info">
+          <h7>
+            Director: Cristian Mungiu.
+            <br>
+            Reparto:  Anamaria Marinca, Laura Vasiliu, Vlad Ivanov.
+          </h7>
+        </div>
+
+        <p class="card-text">Rumania, año 1987. Gabita y Otilia deben superar duras adversidades para realizar un aborto en un contexto histórico que lo restringe y penaliza fuertemente por ley, así como también a los métodos anticonceptivos.
+
+          Una película con una fuerte crítica social a la opresión ejercida por el régimen comunista de la época, en vigencia del decreto 770 mediante el cual se pretendía aumentar drásticamente la población prohibiendo la terminación de los embarazos y la anticoncepción. Esto forzaba a las mujeres a recurrir a métodos clandestinos, poniendo en riesgo sus propias vidas. 
+          
+          Una cinta minimalista, brutalmente honesta, donde se muestra sin reparos lo que sucede, sin hacer juicios morales. Una muestra de la dura realidad de las mujeres y de las difíciles situaciones que deben enfrentar. 
+          
+          La cinta pertenece a la denominada "Nueva Ola" rumana, cuyas películas se caracterizan en su mayoría por ser austeras y realistas, con contenido social, ambientadas durante el fin del comunismo y la transición al nuevo sistema económico y político. 
+          
+          🌈Dato de color: Ganó la Palma de Oro del Festival de Cannes en 2007, entre otros galardones. </p>
+          <span class="imdbRatingPlugin" data-user="ur9121736" data-title="tt1032846" data-style="p2"><a href="https://www.imdb.com/title/tt1032846/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" 4 luni, 3 saptamâni si 2 zile
+            (2007) on IMDb" />
+            </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="nueve-reinas" class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="posts/nueve-reinas.jpg" class="card-img" alt="Nueve Reinas">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="title-info">
+          <h7>Argentina • 2000 • 1h 54min</h7>
+          <h5 class="card-title">Nueve Reinas</h5>
+          <h7></h7>
+          <div class="genres">
+            <div class="badge badge-pill badge-policial">Policial</div>
+            <div class="badge badge-pill badge-drama">Drama</div>
+            <div class="badge badge-pill badge-comedia">Comedia</div>
+
+
+        </div>
+
+        <div class="staff-info">
+          <h7>
+            Director: Fabián Bielinsky.
+            <br>
+            Reparto: Ricardo Darín, Gastón Pauls, Leticia Bredice.
+          </h7>
+        </div>
+
+        <p class="card-text">Juan (Gastón Pauls) y Marcos (Ricardo Darín) son dos estafadores que se conocen cuando el primero salva al segundo al ser descubierto en un trabajo que sale mal. De a poco comienzan a acercarse, y surge un trabajo grande del que ambos podrían beneficiarse: hacerse de las valiosas estampillas "Nueve Reinas" para vendérselas a un comprador. 
+
+          "Nueve Reinas" se ha convertido en un auténtico clásico del cine argentino, y es una de las principales cartas de presentación para con el resto del mundo. En ella se puede apreciar el por qué de la fama de "oportunistas y "ventajeros" con que algunos argentinos se han hecho conocer, y algo de como se puede apreciar esto en las calles de la gran urbe bonaerense. 
+          
+          🌈Dato de color: Si bien ha sido nominada y ganadora de varios premios a nivel mundial, además de contar con una remake hollywoodense llamada "Criminal" con actuaciones de John C. Reilly, Diego Luna y Maggie Gyllenhall, no fue elegida como representante argentina a los premios Oscar 2001, puesto que finalmente ocuparía la película "Felicidades".</p>
+          <span class="imdbRatingPlugin" data-user="ur9121736" data-title="tt0247586" data-style="p2"><a href="https://www.imdb.com/title/tt0247586/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" Nueve reinas
+            (2000) on IMDb" />
+            </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cena-idiotas" class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="posts/diner-de-cons.jpg" class="card-img" alt="La Cena de los Idiotas">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="title-info">
+          <h7>Francia • 1998 • 1h 20min</h7>
+          <h5 class="card-title">La Cena de los Idiotas</h5>
+          <h7>("Le Dîner de Cons")</h7>
+          <div class="genres">
+            <div class="badge badge-pill badge-comedia">Comedia</div>
+          </div>
+        </div>
+
+        <div class="staff-info">
+          <h7>
+            Director: Francis Veber     <br>
+            Reparto:  Thierry Lhermitte, Jacques Villeret.
+          </h7>
+        </div>
+
+        <p class="card-text">Un grupo de gente de clase alta tiene para la cena de cada miércoles la misma premisa: llevar consigo al hombre más tonto que puedan encontrar para reirse de ellos. Pero justo cuando Pierre encuentra a Monsieur Mignon, un especimen muy particular, las cosas comienzan a salir mal. 
+
+          "La cena de los idiotas" es un clásico de la comedia francesa, y ya han visto la luz adaptaciones tanto en cine como en teatro en Estados Unidos (con Steve Carell y Paul Rudd), Argentina (Guillermo Francella y Adrían Suar), India y China. </p>
+          <span class="imdbRatingPlugin" data-user="ur9121736" data-title="tt0119038" data-style="p2"><a href="https://www.imdb.com/title/tt0119038/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" Le dîner de cons
+            (1998) on IMDb" />
+            </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="mononoke" class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="posts/mononoke.jpg" class="card-img" alt="mononoke hime">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="title-info">
+          <h7>Japón • 1997 • 2h 14min</h7>
+          <h5 class="card-title">Princesa Mononoke</h5>
+          <h7>("Mononoke Hime")</h7>
+          <div class="genres">
+            <div class="badge badge-pill badge-animada">Animada</div>
+            <div class="badge badge-pill badge-fantasia">Fantasía</div>
+            <div class="badge badge-pill badge-drama">Drama</div>
+        </div>
+
+        <div class="staff-info">
+          <h7>
+            Director: Hayao Miyazaki ("El Viaje de Chihiro", "Mi Vecino Totoro").
+            <br>
+            Reparto: Yôji Matsuda, Yuriko Ishida, Yûko Tanaka
+          </h7>
+        </div>
+
+        <p class="card-text">Al defender a su aldea del ataque de un feroz demonio, el brazo de Ashitaka es infectado por una maldición. Deberá aventurarse en busca de la cura, y su camino lo llevará a cruzarse con fantásticos personajes, entre ellos una aguerrida joven montada en un enorme lobo blanco.
+
+          Una de las obras maestras de Miyazaki, "Princesa Mononoke" representa en toda su profundidad el eterno conflicto entre la naturaleza y la raza humana.</p>
+          <span class="imdbRatingPlugin" data-user="ur9121736" data-title="tt0119698" data-style="p2"><a href="https://www.imdb.com/title/tt0119698/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" Mononoke-hime
+            (1997) on IMDb" />
+            </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="amores-perros" class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="posts/amores-perros.jpg" class="card-img" alt="amores perros">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="title-info">
+          <h7>México • 2000 • 2h 34min</h7>
+          <h5 class="card-title">Amores Perros</h5>
+          <h7></h7>
+          <div class="genres">
+            <div class="badge badge-pill badge-drama">Drama</div>
+          </div>
+        </div>
+
+        <div class="staff-info">
+          <h7>
+            Director: Alejandro González Iñárritu
+            Escritor: Guillermo Arriaga
+            <br>
+            Reparto: Emilio Echevarría, Gael García Bernal, Goya Toledo.
+          </h7>
+        </div>
+
+        <p class="card-text">Un trágico accidente conecta tres historias: un indigente alejado de su familia, un joven que sueña con escapar de la pobreza, y una famosa supermodelo al inicio de una nueva relación. Todas ellas con un particular punto de contacto: los perros. 
+
+          Es el primer largometraje de Iñárritu, y al igual que en la mayoría de sus obras, tiene al dolor como parte fundamental de la trama. Aquí además encontraremos escenas de violencia gráfica, peleas de perros, historias de traición, desencuentro, frustración y necesidad. 
+          
+          Un film crudo que nos habla del desamor y del amor dañino, la decadencia y las relaciones humanas.</p>
+          <span class="imdbRatingPlugin" data-user="ur9121736" data-title="tt0245712" data-style="p2"><a href="https://www.imdb.com/title/tt0245712/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" Amores perros
+            (2000) on IMDb" />
+            </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>esto es el fin</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="cinepica.js"></script>
+
+</body>
+</html>
