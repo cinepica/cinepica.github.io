@@ -1,0 +1,159 @@
+
+body {
+/*     background: rgb(46,156,69);
+	background: radial-gradient(circle, rgba(46,156,69,1) 50%, rgba(18,18,18,1) 100%); */
+	background: #222222;
+	margin: 20px;
+	font-family: 'Karla', sans-serif;
+}
+
+#logo-div{
+	max-height: 200px;
+}
+
+#logo {
+	max-height: 200px;
+	width: 100%;
+    object-fit: fill;
+
+}
+
+#demo, .mb-3, .container {
+	margin-top: 10px;
+}
+
+#logo, .carousel-inner, #bootstrap-overrides .card {
+    border: 1.2px solid white;
+    border-radius: 0.3em;
+}
+
+#bootstrap-overrides .card-title {
+    margin-bottom: 0px
+}
+
+#bootstrap-overrides .card-img{
+border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;}
+
+.carousel-inner {
+    max-height: 400px;
+}
+
+.carousel-item {
+    height: 400px;
+    background-color: #121212;
+}
+
+#active-image-carousel {
+
+}
+
+.card-img-top {height: 150px}
+
+.card-roulette {
+	height: 300px; 
+	width: 200px;
+}
+
+.card-body { 
+	background-color: #121212;
+	color: white;
+}
+
+.card, .carousel-inner , #logo, .container {box-shadow: 1px 1px 5px 2px #121212;
+		}
+
+.card-img-overlay {
+	color: white;
+	background-color: #121212;
+	margin-left: 200px;
+}	
+
+.carousel-control-prev {
+	margin-left: 30%;
+	max-height: 100px;
+	top: 30%;
+}
+
+.carousel-control-next {
+	max-height: 100px;
+    top: 30%;
+    margin-right: -21px;
+}
+
+.carousel-indicators {
+	margin-left: 45%;
+}
+
+.card-group {
+	margin-top: 10px;
+}
+
+.card-img-overlay .card-text, .card-img-overlay .card-title, .card-img-overlay .btn {
+	margin-left: 10%;
+	margin-right: 10%;
+	max-width:	 500px;
+	text-align: justify;
+	font-size: 0.8em;
+}
+
+
+
+.badge-drama {
+	background-color: #643a0e;
+}
+.badge-comedia {
+	background-color: rgb(28, 148, 54);
+}
+.badge-accion {
+	background-color: #5e1717;
+}
+.badge-psicologica {
+	background-color: rgb(80, 28, 177);
+}
+.badge-suspenso {
+	background-color: rgb(110, 143, 21);
+}
+.badge-policial {
+	background-color: rgb(26, 26, 155);
+}
+.badge-romantica {
+	background-color: rgb(160, 26, 142);
+}
+.badge-musical {
+	background-color: rgb(230, 115, 22);
+}
+.badge-terror {
+	background-color: rgb(170, 9, 9);
+}
+.badge-biografica {
+	background-color: rgb(35, 105, 145);
+}
+.badge-documental {
+	background-color: rgb(51, 73, 77);
+}
+.badge-animada {
+	background-color: rgb(185, 173, 3);
+}
+.badge-fantasia {
+	background-color: rgb(207, 17, 106);
+}
+
+.staff-info {
+	margin: .5em auto;
+}
+
+.card-text{
+	text-align: justify;
+}
+
+h7 {
+	color: gray;
+}
+
+#bootstrap-overrides .imdbRatingStyle2 {
+	background-color: black;
+	border: 1px solid white;
+	background: rgb(9, 10, 9);
+	background: radial-gradient(circle, rgb(0, 0, 0) 5%, rgb(48, 48, 8) 100%);
+}
