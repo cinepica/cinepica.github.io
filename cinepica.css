@@ -100,7 +100,7 @@ border-bottom-right-radius: 0;
 
 
 .badge-drama {
-	background-color: #643a0e;
+	background-color: #9b6d0b;
 }
 .badge-comedia {
 	background-color: rgb(28, 148, 54);
@@ -138,6 +138,19 @@ border-bottom-right-radius: 0;
 .badge-fantasia {
 	background-color: rgb(207, 17, 106);
 }
+.badge-historica {
+	background-color: rgb(64, 70, 16);
+}
+.badge-sci-fi {
+	background-color: rgb(0, 207, 155);
+}
+.badge-thriller {
+	background-color: rgba(83, 207, 0, 0.671);
+}
+.badge-musica {
+	background-color: rgba(207, 0, 0, 0.671);
+}
+
 
 .staff-info {
 	margin: .5em auto;
@@ -156,4 +169,25 @@ h7 {
 	border: 1px solid white;
 	background: rgb(9, 10, 9);
 	background: radial-gradient(circle, rgb(0, 0, 0) 5%, rgb(48, 48, 8) 100%);
+}
+
+.image1 {
+	display: block;
+}
+.image2 {
+	display: none;
+}
+
+ @media only screen and (min-width: 768px){
+.image1 {
+	display: none;
+}
+
+.image2 {
+	display: block;
+	height: 100%;
+}
+.card-body {
+	height: 100%;
+}
 }
