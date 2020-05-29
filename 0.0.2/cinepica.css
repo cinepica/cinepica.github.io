@@ -1,0 +1,384 @@
+html {
+	height: 100vh;
+}
+
+body {
+/*     background: rgb(46,156,69);
+	background: radial-gradient(circle, rgba(46,156,69,1) 50%, rgba(18,18,18,1) 100%); */
+	background: #222222;
+	width: 100%;
+	height: 100vh;
+	font-family: 'Karla', sans-serif;
+}
+
+#page-container {
+	margin: 3px 20px 20px 20px;
+	transition: .5s;
+	overflow-y: hidden;
+}
+
+/* <<< OPTIONS MENU >>> */
+.block-touch {
+	overflow: hidden;
+}
+
+.grayed-out {
+	opacity: .2;
+}
+
+#collapse-button:hover, .active {
+	transition: .5s;
+}
+
+/* <<< COLLAPSE BUTTON START >>>*/
+#collapse-button {
+	background-color: #222222;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-top-right-radius: 0.1em;
+	border-bottom-right-radius: 0.1em;
+	transition: .2s;
+	padding-bottom: 0px;
+	vertical-align: middle;
+	right: 100%;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 18px;
+	height: 3px;
+	background-color: white;
+	margin: 4px 0;
+	transition: .4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-4.5px, 5px) ;
+	transform: rotate(-45deg) translate(-4.5px, 5px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+	opacity: 0;
+}
+
+  /* Rotate last bar */
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-5px, -6px) ;
+	transform: rotate(45deg) translate(-5px, -6px) ;
+}
+/* <<< COLLAPSE BUTTON END >>>*/
+
+#navbar-container {
+	width: 0%;
+	height: 100vh;
+	background: linear-gradient(to top right, #121212 0%, #2E9C45 100%);
+	top: 0;
+	color: white;
+	z-index: 1;
+	position: fixed;
+	overflow-x: hidden;
+	transition: .5s;
+}
+
+.active-navbar {
+	background: linear-gradient(to top right, #121212 0%,  #2E9C45 100%);
+}
+
+#navbar-list {
+	overflow: hidden;
+	display: block;
+	margin-bottom: 0px;
+	padding-top: 50px;
+	background: linear-gradient(to top right, #121212 0%, #2E9C45
+	100%);
+	box-shadow: 0 4px 4px -1px #d9d9d9;
+	height: 100vh;
+}
+
+.active {
+	display: block !important;
+}
+
+#navbar-list ul {
+	padding-left: 20px;
+}
+
+#navbar-list li {
+	padding: 3px;
+	font-size: .8em;
+	display: block;
+	border-radius: .5em;
+	transition: .2s;
+	width: 32vw;
+	margin: 5px;
+	color: white;
+	font-weight: 800;
+}
+
+#navbar-list li:hover {
+	background-color: white;
+	color: rgb(46,156,69);
+	cursor: pointer;
+	font-size: .85em;
+	transition: .5s;
+}
+
+/* <<< END OF OPTIONS MENU >>> */
+
+
+
+#logo-div{
+	max-height: 200px;
+}
+
+#logo {
+	max-height: 200px;
+	width: 100%;
+    object-fit: fill;
+}
+
+#demo, .mb-3, .container, .carousel-inner, .card-group, .cards-by-genre, .cards-by-country {
+	margin-top: 10px;
+}
+
+#logo, #random-banner, .carousel-inner, #bootstrap-overrides .card, .cards-by-genre, .cards-by-country {
+    border: 1.2px solid white;
+    border-radius: 0.3em;
+}
+
+#bootstrap-overrides .card-title {
+    margin-bottom: 0px
+}
+
+#bootstrap-overrides .card-img{
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;}
+
+
+
+/*  <<< CAROUSEL STARTS HERE >>> */
+.carousel-inner {
+}
+
+.carousel-item {
+	height: 45vh;
+	transition: .5s;
+}
+
+.carousel-item img{
+	height: 45vh;
+	object-fit: cover;
+}
+
+.carousel-indicators li{
+	border-radius: 1em;
+}
+
+.carousel-caption {
+	opacity: .4;
+}
+
+/* <<< CAROUSEL ENDS HERE >>> */
+
+
+
+/* <<< CARDS GROUPS START HERE >>> */
+.cards-by-genre, .cards-by-country {
+	height: 18vh;
+	display: flex;
+}
+
+.cards-by-genre img, .cards-by-country img {
+	width: 22.1vw;
+	height: 100%;
+
+}
+
+.card-img-top {
+	height: 150px
+}
+
+.card-body { 
+	background-color: #121212;
+	color: white;
+}
+
+
+/* <<< CARDS GROUPS END HERE >>> */
+
+#random-banner {
+	max-height: 10vh;
+	margin-top: 10px;
+
+}
+
+#random-banner img {
+width: 100%;
+}
+
+.card, .carousel-inner , #logo, .container {
+	box-shadow: 1px 1px 5px 2px #121212;
+		}
+/* 
+.card-img-overlay {
+	color: white;
+	background-color: #121212;
+	margin-left: 00px;
+}	
+
+.card-img-overlay .card-text, .card-img-overlay .card-title, .card-img-overlay .btn {
+	margin-left: 10%;
+	margin-right: 10%;
+	max-width:	 500px;
+	text-align: justify;
+	font-size: 0.8em;
+} */
+
+.genres {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.genre-icon {
+	width:25px;
+	height:25px;
+	margin-left: -10px;
+}
+
+.badge-pill {
+	max-height: 20px;
+}
+
+.badge-pill img {
+	vertical-align: top;
+	margin:  -6.5px auto;
+}
+
+.badge-drama {
+	background-color: #9b6d0b;
+}
+.badge-comedia {
+	background-color: rgb(28, 148, 54);
+}
+.badge-accion {
+	background-color: #5e1717;
+}
+.badge-psicologica {
+	background-color: rgb(80, 28, 177);
+}
+.badge-suspenso {
+	background-color: rgb(110, 143, 21);
+}
+.badge-policial {
+	background-color: rgb(26, 26, 155);
+}
+.badge-romantica {
+	background-color: rgb(160, 26, 142);
+}
+.badge-musical {
+	background-color: rgb(230, 115, 22);
+}
+.badge-terror {
+	background-color: rgb(170, 9, 9);
+}
+.badge-biografica {
+	background-color: rgb(35, 105, 145);
+}
+.badge-documental {
+	background-color: rgb(51, 73, 77);
+}
+.badge-animada {
+	background-color: rgb(185, 173, 3);
+}
+.badge-fantasia {
+	background-color: rgb(207, 17, 106);
+}
+.badge-historica {
+	background-color: rgb(64, 70, 16);
+}
+.badge-sci-fi {
+	background-color: rgb(0, 207, 155);
+}
+.badge-thriller {
+	background-color: rgba(83, 207, 0, 0.671);
+}
+.badge-musica {
+	background-color: rgba(207, 0, 0, 0.671);
+}
+
+.staff-info {
+	margin: .5em auto;
+}
+
+.card-text{
+	text-align: justify;
+}
+
+h7 {
+	color: gray;
+}
+
+#bootstrap-overrides .imdbRatingStyle2 {
+	background-color: black;
+	border: 1px solid white;
+	background: rgb(9, 10, 9);
+	background: radial-gradient(circle, rgb(0, 0, 0) 5%, rgb(48, 48, 8) 100%);
+}
+
+.image1 {
+	display: block;
+}
+.image2 {
+	display: none;
+}
+
+
+/* <<< FOOTER STARTS HERE >>> */
+footer {
+	height: 80px;
+	border-top: 1px solid white;
+	background-color: rgb(46,156,69);
+	display: flex;
+	justify-content: space-around;
+}
+
+#copyright {
+	margin-top: 45px;
+	width: 150px;
+	margin-bottom: 0;
+}
+
+#social-media-info {
+	width: 25vw;
+	align-self: center;
+	height: 50px;
+	display: flex;
+}
+
+.soc-net-icons {
+	background-color: #121212;
+	fill: white !important;
+	border-radius: 2em;
+	width: 50%;
+	margin-right: 2px;
+}
+
+/* <<< FOOTER ENDS HERE >>> */
+
+
+@media only screen and (min-width: 768px){
+.image1 {
+	display: none;
+}
+
+.image2 {
+	display: block;
+	height: 100%;
+}
+.card-body {
+	height: 100%;
+}
+}
