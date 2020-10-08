@@ -16,10 +16,6 @@ body {
 	overflow-y: hidden;
 }
 
-#all-films {
-
-}
-
 #error-msg {
 	min-height: 70vh;
 	color: blanchedalmond;
@@ -408,6 +404,28 @@ h7 {
 }
 .image2 {
 	display: none;
+}
+
+.film-links>a {
+	background: #2E9C45;
+	color: white;
+	border-radius: 18%;
+	font-weight: normal;
+	margin: 12px 0 0 0;
+	padding: .2em;
+	display: block;
+	width: 120px;
+	text-align: center;
+}
+
+.film-links>a:hover {
+	background: white;
+	color: black;
+	cursor: pointer;
+	font-size: 1.05em;
+	font-weight: bold;
+	transition: .5s;
+	text-decoration: none;
 }
 
 
