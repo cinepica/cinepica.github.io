@@ -1,6 +1,7 @@
 var loadedFilms = 0;
 var filmsDisplayed = 0;
 var filmsList = [];
+
 var films = [
     {   name:"Three Billboards Outside Ebbing, Missouri",
         alternateName: "Tres anuncios por un crimen",
@@ -71,7 +72,7 @@ var films = [
         name:"Amores Perros",
         genres: ["drama"], 
         country:"México",
-        runtime: "",
+        runtime: "2h 34min",
         year: 2000,
         director: "Alejandro González Iñárritu",
         actores: ["Emilio Echevarría", "Gael García Bernal", "Goya Toledo."],
@@ -863,8 +864,8 @@ var films = [
         year: 2000,
         director: "Fabián Bielinsky",
         actores: ["Ricardo Darín", "Gastón Pauls", "Leticia Bredice"],
-        image1: "../posts/.jpg",
-        image2: "../posts/.jpg",
+        image1: "../posts/nueve-reinas.jpg",
+        image2: "../posts/nueve-reinas2.jpg",
         description:`Juan (Gastón Pauls) y Marcos (Ricardo Darín) son dos estafadores que se conocen cuando el primero salva al segundo al ser descubierto en un trabajo que sale mal. De a poco comienzan a acercarse, y surge un trabajo grande del que ambos podrían beneficiarse: hacerse de las valiosas estampillas "Nueve Reinas" para vendérselas a un comprador. <br><br>
 "Nueve Reinas" se ha convertido en un auténtico clásico del cine argentino, y es una de las principales cartas de presentación ante el resto del mundo. En ella se puede apreciar el por qué de la fama de "oportunistas y "ventajeros" con que algunos argentinos se han hecho conocer. En la cinta podemos ver a los protagonistas desempeñar sus habilidades en las calles de la gran urbe bonaerense. <br><br>
 Si bien ha sido nominada y ganadora de varios premios a nivel mundial, además de contar con una remake hollywoodense llamada "Criminal" con actuaciones de John C. Reilly, Diego Luna y Maggie Gyllenhall, no fue elegida como representante argentina a los premios Oscar 2001, lugar que finalmente ocuparía la película "Felicidades".`,
@@ -1209,6 +1210,7 @@ function appendFilm() {
         filmsContainer.appendChild(filmShown);
         fetchFilmData(`${filmsDisplayed}`);
         filmsDisplayed++;
+        imdbRatingTrigger()
         }
     );
     filmsList = [];
@@ -1233,9 +1235,20 @@ function fetchFilmData (x) {
 
 appendFilm();
 
+window.onload = imdbRatingTrigger()
+
+function imdbRatingTrigger(){
+    $('[id^="imdb-jsonp"]').remove(); //to prevent creation of multiple script tags.
+    $(".star").remove();
+    $(".rating").html("");
+
+    (function(d,s,id){
+        var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);
+    })(document,'script','imdb-rating-api');
+}
+
 $(window).scroll(function() {
     if(($(window).scrollTop() + $(window).height() > $(document).height() - 100) && loadedFilms < filteredList.length) {
         appendFilm();
     }
 });
-
