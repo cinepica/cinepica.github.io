@@ -1170,7 +1170,7 @@ var filteredList = films.sort(function (a,b){
 var filmsContainer = document.querySelector("#all-films");
 var allPics = films.map(pic=>`${pic.image1}`);
 
-if (page == "index.html" ││ ""){
+if (page == "index.html" ││ page == ""){
 var allComedias = films.filter(genre=>genre.genres.includes("comedia")).map(pic=>`${pic.image2}`);
 var comediaRandom = allComedias[Math.floor(Math.random() * allComedias.length)];
 document.querySelector("#comedia-pic").src = comediaRandom;
