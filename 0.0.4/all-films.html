@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="cinepica.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla|Literata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.css">
+
+
+	<title>	🎬 Cinépica --- ¿Qué puedo ver hoy?</title>
+</head>
+<body id="bootstrap-overrides">
+
+  <button onclick="openNav(this)" type="button" class="collapsible" id="collapse-button">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </button>
+
+  <nav id="navbar-container">
+    <ul id="navbar-list">
+      <a href="index.html"><li>> Home</li></a>
+      <a href="all-films.html"><li>> Listado completo</li></a>
+      <a href="filtrar.html"><li>> Filtrar</li></a>
+      <a href="random.html"><li>> Random!</li></a>
+      <a href="about.html"><li>> Sobre nosotros</li></a>
+      <a href="contacto.html"><li>> Contacto</li></a>
+    </ul>
+  </nav>
+
+  <div id="page-container">
+    
+    <header id="master-header">
+  
+      <div id="logo-div">
+        <a href="index.html"><img id="logo" src="../IMG/logo.png" alt="cinepica"></a>
+      </div>
+  
+
+    </header>
+  
+    <div id="filter-buttons">
+      <button id="btn-all" class="badge badge-pill badge-all" onclick="handleFilterEvent('all')">A-Z</button>
+      <button id="btn-comedia" class="badge badge-pill badge-comedia" onclick="handleFilterEvent('comedia')">COMEDIA</button>
+      <button id="btn-drama" class="badge badge-pill badge-drama" onclick="handleFilterEvent('drama')">DRAMA</button>
+      <button id="btn-suspenso" class="badge badge-pill badge-suspenso" onclick="handleFilterEvent('suspenso')">SUSPENSO</button>
+      <button id="btn-terror" class="badge badge-pill badge-terror" onclick="handleFilterEvent('terror')">TERROR</button>
+      <button id="btn-accion" class="badge badge-pill badge-accion" onclick="handleFilterEvent('accion')">ACCION</button>
+      <button id="btn-psicologica" class="badge badge-pill badge-psicologica" onclick="handleFilterEvent('psicologica')">PSICOLOGICA</button>
+      <button id="btn-policial" class="badge badge-pill badge-policial" onclick="handleFilterEvent('policial')">POLICIAL</button>
+      <button id="btn-romantica" class="badge badge-pill badge-romantica" onclick="handleFilterEvent('romantica')">ROMANTICA</button>
+      <button id="btn-musical" class="badge badge-pill badge-musical" onclick="handleFilterEvent('musical')">MUSICAL</button>
+      <button id="btn-documental" class="badge badge-pill badge-documental" onclick="handleFilterEvent('documental')">DOCUMENTAL</button>
+      <button id="btn-biografica" class="badge badge-pill badge-biografica" onclick="handleFilterEvent('biografica')">BIOGRAFICA</button>
+      <button id="btn-animada" class="badge badge-pill badge-animada" onclick="handleFilterEvent('animada')">ANIMADA</button>
+      <button id="btn-fantasia" class="badge badge-pill badge-fantasia" onclick="handleFilterEvent('fantasia')">FANTASIA</button>
+      <button id="btn-thriller" class="badge badge-pill badge-thriller" onclick="handleFilterEvent('thriller')">THRILLER</button>
+      <button id="btn-historica" class="badge badge-pill badge-historica" onclick="handleFilterEvent('historica')">HISTORICA</button>
+      <button id="btn-sci-fi" class="badge badge-pill badge-sci-fi" onclick="handleFilterEvent('sci-fi')">SCI-FI</button>
+      <button id="btn-musica" class="badge badge-pill badge-musica" onclick="handleFilterEvent('musica')">MUSICA</button>
+    </div>
+
+    <div id="all-films" >
+
+    
+  <!--  EMPTY FILM TEMPLATE   <div id="film-display" class="card mb-3 film">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="film-image1" src="" class="card-img image1" alt="three billboards image">
+            <img id="film-image2" src="" class="card-img image2" alt="three billboards image">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="title-info">
+                <h7><span id="film-country" class="film-country"></span>  • <span id="film-year" class="film-year"></span> • <span id="film-runtime" class="film-runtime"></span></h7>
+                <h5 class="card-title film-name" id="film-name"></h5>
+                <h7 ><span id="film-alternate-name"  class="film-alternate-name"></span></h7>
+                <div id="film-genres" class="genres">
+                  
+              </div>
+      
+              <div class="staff-info">
+                <h7>
+                  Dirección: <span id="film-director" class="film-director"></span>
+                  <br>
+                  Reparto: <span id="film-actores" class="film-actores"></span> 
+                  <br>  
+                  <span id="film-escritor" class="film-escritor"></span> 
+                </h7>
+              </div>
+              <p id="film-description" class="card-text film-description"></p>
+              <span id="film-rating"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    </div>
+  </div>
+
+  <wrapper>
+    <footer id="footer">
+      <div>
+        <p id="copyright">© Cinépica 2020</p>
+      </div>
+      <div id="social-media-info">
+        <a href="https://www.instagram.com/cinepica/"><div data-icon="ei-sc-instagram" data-size="m" class="soc-net-icons"></div></a>
+        <a href="https://www.facebook.com/cinepica"><div data-icon="ei-sc-facebook" data-size="m" class="soc-net-icons"></div></a>
+      </div>
+    </footer>
+  </wrapper>
+
+<script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="cinepica.js"></script>
+<!-- <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+--></body>
+</html>
