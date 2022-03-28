@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="555ce08d-318f-4cd1-ac8e-9a2d2f188128" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../posts/alice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/allado.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/anearth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/burning.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/dogville.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/el.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/festen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/ichseh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/koyaa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/mandariinid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/return.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/separation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/sevenpsycho.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/skammen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../posts/systemsprenger.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0.0.4/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../0.0.4/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0.0.4/all-films.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../0.0.4/all-films.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0.0.4/cinepica.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../0.0.4/cinepica.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0.0.4/cinepica.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../0.0.4/cinepica.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0.0.4/contacto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../0.0.4/contacto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0.0.4/films-list.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0.0.4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../0.0.4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IMG/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../IMG/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IMG/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Le diner de con/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Le diner de con/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Le diner de con/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Le diner de con/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Le diner de con/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Le diner de con/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Le diner de con/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Le diner de con/71rN70LQ1VL._RI_.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="26xKgbZlrckuS7AkEkD1istbhsN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WEB DEVELOPING\Cinepica\film-images\anearth" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="rename" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="anearth" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rename.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.rename" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="555ce08d-318f-4cd1-ac8e-9a2d2f188128" name="Changes" comment="" />
+      <created>1648359910058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648359910058</updated>
+    </task>
+    <servers />
+  </component>
+</project>
