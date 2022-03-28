@@ -169,7 +169,7 @@ body {
 #logo {
 	max-height: 200px;
 	width: 100%;
-    object-fit: cover;
+    object-fit: stretch;
 }
 
 #demo, .mb-3, .container, .carousel-inner, .card-group, .cards-by-genre, .cards-by-country, #error-msg, #sobre-nosotros {
@@ -234,7 +234,7 @@ border-bottom-left-radius: 0;}
 }
 
 
-.cards-by-genre a:hover, .cards-by-country a:hover {
+.cards-by-genre a:hover, .cards-by-country a:hover, #random-banner:hover {
 	opacity: .5;
 	transition: .5s;
 } 
@@ -399,6 +399,10 @@ h7 {
 	background: radial-gradient(circle, rgb(0, 0, 0) 5%, rgb(48, 48, 8) 100%);
 }
 
+#bootstrap-overrides .imdbRatingPlugin{
+	margin: 0 auto;
+} 
+
 .image1 {
 	display: block;
 }
@@ -406,23 +410,29 @@ h7 {
 	display: none;
 }
 
+#container-rating-link{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
 .film-links>a {
 	background: #2E9C45;
 	color: white;
 	border-radius: 18%;
 	font-weight: normal;
-	margin: 12px 0 0 0;
+	margin: 0 0 0 0;
 	padding: .2em;
-	display: block;
-	width: 120px;
+	display: inline-block;
+	width: 8em;
 	text-align: center;
+	transition: .2s;
 }
 
 .film-links>a:hover {
 	background: white;
 	color: black;
 	cursor: pointer;
-	font-size: 1.05em;
 	font-weight: bold;
 	transition: .5s;
 	text-decoration: none;
@@ -466,55 +476,6 @@ footer {
 
 /* <<< FOOTER ENDS HERE >>> */
 
-/* ACÁ EMPIEZA EL POP-UP */
-
-.modal {
-    position: absolute; /* Stay in place */
-    opacity: 0;
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0,0,5); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  .modal-on {
-      position: static;
-      opacity: 1;
-      transition: 1s;
-  }
-
-  .modal-content {
-
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 500px; /* Could be more or less, depending on screen size */
-    height: 500px;
-    background-image: url("popup.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-/* ACÁ TERMINA EL POP-UP */
 
 @media only screen and (min-width: 568px){
 .image1 {
@@ -534,3 +495,105 @@ footer {
 }
 
 }
+
+
+
+
+/* Parent wrapper to carousel. Width can be changed as needed. */
+.carousel-wrapper {
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+  }
+  
+  /* Apply 'border-box' to 'box-sizing' so border and padding is included in the width and height. */
+  .carousel-wrapper * {
+	box-sizing: border-box;
+  }
+  
+  /* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
+  .carousel {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  }
+  
+  /* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
+  .carousel__photo {
+	opacity: 0;
+	position: absolute;
+	top:0;
+	width: 100%;
+	margin: auto;
+	padding: 1rem 0;
+	z-index: 100;
+	transition: transform .5s, opacity .5s, z-index .5s;
+  }
+  
+  /* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
+  .carousel__photo.initial,
+  .carousel__photo.active {
+	opacity: 1;
+	position: relative;
+	z-index: 900;
+  }
+  
+  /* Set 'z-index' to sit behind our '.active' item. */
+  .carousel__photo.prev,
+  .carousel__photo.next {
+	z-index: 800;
+  }
+  
+  /* Translate previous item to the left */
+  .carousel__photo.prev {
+	transform: translateX(-100%);
+  }
+  
+  /* Translate next item to the right */
+  .carousel__photo.next {
+	transform: translateX(100%);
+  }
+  
+  /* Style navigation buttons to sit in the middle, either side of the carousel. */
+  .carousel__button--prev,
+  .carousel__button--next {
+	position: absolute;
+	top:50%;
+	width: 3rem;
+	height: 3rem;
+	background-color: #FFF;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	cursor: pointer; 
+	z-index: 1001; /* Sit on top of everything */
+	border:1px solid black;
+  /*  opacity: 0;  Hide buttons until carousel is initialised 
+	transition:opacity 1s;*/
+  }
+  
+  .carousel__button--prev {
+	left:0;
+  }
+  
+  .carousel__button--next {
+	right:0;
+  }
+  
+  /* Use pseudo elements to insert arrows inside of navigation buttons */
+  .carousel__button--prev::after,
+  .carousel__button--next::after {
+	content: " ";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 50%;
+	left: 54%;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	transform: translate(-50%, -50%) rotate(135deg);
+  }
+  
+  .carousel__button--next::after {
+	left: 47%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+  }
